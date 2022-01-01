@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Cartier</title>
+
+</head>
+<body><!---->
+    <header class="bheader">
+        <a href="#" class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <a href="index.html"><h1 class="logo"></h1></a>
+
+        <nav>
+            <a href="sign_in.html"><i class="far fa-user"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+    </header>
+    <aside class="light">
+        <header>
+            <button class="aside_toggle_btn">
+                <a href="#" class="close">
+                    <i class="fas fa-times"></i>
+                </a>
+            </button>
+            <h1 class="logo"><a href="index.html"></a></h1>
+        </header>
+
+        <ul class="menu_list">
+            <li>
+                <a href="collections.html">Collections</a>
+            </li>
+            <li>
+                <span>주얼리</span>
+                <ul class="aside_category">
+                    <li><a href="list.html">모두 보기</a></li>
+                    <li><a href="list.html">팔찌</a></li>
+                    <li><a href="list.html">반지</a></li>
+                    <li><a href="list.html">목걸이 / 귀걸이</a></li>
+                    <li><a href="list.html">하이 주얼리</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>워치</span>
+                <ul class="aside_category">
+                    <li><a href="list.html">여성</a></li>
+                    <li><a href="list.html">남성</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>웨딩 & 다이아몬드</span>
+                <ul class="aside_category">
+                    <li><a href="list.html">ENGAGEMET RINGS</a></li>
+                    <li><a href="list.html">WEDDING BEND</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>라이프스타일</span>
+                <ul class="aside_category">
+                    <li><a href="list.html">가죽 제품</a></li>
+                    <li><a href="list.html">액세서리</a></li>
+                    <li><a href="list.html">안경</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="list.html"><span>가방</span></a>
+            </li>
+            <li>
+                <a href="list.html"><span>서비스</span></a>
+            </li>
+        </ul>
+        <ul class="account">
+            <li>
+                <a href="sign_in.html"><i class="far fa-user"></i>나의 계정</a>
+            </li>
+            <li>
+                <a href="sign_in.html"><i class="fas fa-shopping-bag"></i>쇼핑백</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-headset"></i>Contact us</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-phone-alt"></i>+82 1566 7277</a>
+            </li>            
+        </ul>
+    </aside>
+    <div id="fullpage">
+        <div class="section banner">
+            <div class="swiper-container">
+                <ul class="main_slide swiper-wrapper tac">
+                    <li class="swiper-slide mainslide01 contrast">
+                        <h2 class="content-tt kr">까르띠에는 최상의 경험을 선사합니다.</h2>
+                        <h2 class="content-tt kr">
+                            174년의 역사를 지닌<br> 까르띠에와 함께 특별함을 선물하세요.
+                        </h2>
+                    </li>
+                    <li class="swiper-slide mainslide02 contrast">
+                        <h2 class="content-tt kr">까르띠에는 최상의 경험을 선사합니다.</h2>
+                        <h2 class="content-tt kr">
+                            174년의 역사를 지닌<br> 까르띠에와 함께 특별함을 선물하세요.
+                        </h2>
+                    </li>
+                    <li class="swiper-slide mainslide03 contrast">
+                        <h2 class="content-tt kr">까르띠에는 최상의 경험을 선사합니다.</h2>
+                        <h2 class="content-tt kr">
+                            174년의 역사를 지닌<br> 까르띠에와 함께 특별함을 선물하세요.
+                        </h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="section video">
+            <!--
+                비디오가 너무 깨지는데 구찌처럼 메이슨리로 사진 배열을 할까?
+             -->
+            <section class="com_text tac">
+                <h2 class="content-tt en">how far would you go for love</h2>
+            </section>
+            <section class="video_wrapper">
+                <video id="myVideo" loop muted data-autoplay>
+                    <source src="https://www.cartier.com/content/dam/cartier_dam/catalogue_assets/manhattan-update/1-jewelry/insert/common_INSERT/LOVE_icons_2021/INSERT_jwl_coll_LOVE_video.mp4" type="video/mp4">
+                </video>
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WeOybjo0WKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            </section>
+        </div><!-- video -->
+        <div class="section panthere">
+            <div class="pan_banner">
+                <div class="pan_thum"></div>
+                <div class="container contents mg-sm">
+                    <h2 class="content-tt en"><a href="">PANTHÈRE DE CARTIER</a></h2>
+                    <h2 class="content-tt kr"><a href="list.html">팬더 드 까르띠에 컬렉션<i class="fas fa-chevron-right"></i></a></h2>
+                </div>
+            </div><!-- //pan_banner -->
+            <div class="swiper-container">
+                <ul class="panthere_slide swiper-wrapper">
+                    <li class="swiper-slide pslide01">
+                        <img src="img/panthere_br_yg.jpg" alt="">
+                    </li>
+                    <li class="swiper-slide pslide02">
+                        <img src="img/panthere_er_wg.jpg" alt="">
+                    </li>
+                    <li class="swiper-slide pslide03">
+                        <img src="img/panthere_r_yg.jpg" alt="">
+                    </li>
+                    <li class="swiper-slide pslide04">
+                        <img src="img/panthere_br_yg.jpg" alt="">
+                    </li>
+                    <li class="swiper-slide pslide05">
+                        <img src="img/panthere_er_wg.jpg" alt="">
+                    </li>
+                    <li class="swiper-slide pslide06">
+                        <img src="img/panthere_r_yg.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!-- //panthere -->
+        <div class="section collection tac">
+            <div class="contents mg-sm">
+                <h2 class="content-tt en">cartier collections</h2>
+                <h2 class="content-tt kr">까르띠에 컬렉션을 만나보세요</h2>
+            </div>
+            <ul class="collection_list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <p class="btn_t"><a href="#">더 알아보기<i class="fas fa-chevron-right"></i></a></p>
+        </div><!-- //collection -->
+        <div class="section services tac">
+            <div class="contents mg-sm">
+                <h2 class="content-tt en">cartier services</h2>
+                <h2 class="content-tt kr">까르띠에가 제공하는 서비스</h2>
+            </div>
+            <section class="hallbg contrast">
+                <div class="hallcontents">
+                    <span class="content-tt kr">까르띠에는 고객에게 최상의 서비스를 제공할 것을 약속합니다.</span>
+                    <p class="btn_t"><a href="#">더 알아보기<i class="fas fa-chevron-right"></i></a></p>
+                </div>
+            </section>
+        </div><!-- //services -->
+
+        <div id="infopanel" class="modal">
+            <div class="content">
+                <h2>본 웹사이트는 구직용 포트폴리오 사이트로 Cartier와는 관계가 없습니다.</h2>
+                <h2><a href="http://m.hildegards.cafe24.com/">cafe24 버전으로 이동 ></a></h2>
+                <!-- <h2><em>-This site is my personal portfolio site.- <br> It has nothing to do with Steam.</em></h2> -->
+                <p><em>제작 기간 | </em>2021.05.16 ~ 2021.06.09</p>
+                <p><em>주요 특징 | </em>html, css, flex, jquery, mobile</p>
+                <p><em>구현 완료 | </em>
+                    <a href="index.html">메인화면,</a>
+                    <a href="collections.html">컬렉션,</a>
+                    <a href="detail.html">상품상세,</a>
+                    <a href="list.html">상품리스트,</a>
+                    <a href="cart.html">쇼핑백,</a>
+                    <a href="sign_in.html">로그인</a>
+                
+                </p>
+                <p><em>연락처 | </em>박하진 hagene1757@gmail.com</p>
+                <div class="close"><a href="#">close</a></div>
+            </div>
+          </div>
+    
+
+        <footer class="section fp-auto-height">
+            <span class="footer_up tac">
+                <a href=""><i class="fas fa-chevron-up"></i>위로 이동</a>
+            </span>
+            <ul class="container">
+                <li>
+                    <a href="">
+                        <span>까르띠에 컨텍센터</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>이용약관</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>사이트 맵</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>온라인 구매 가이드</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>채용 정보</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>크레딧</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>개인정보처리방침</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>판매약관</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>자주 묻는 질문 (FAQ)</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>비회원 주문 조회</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+            <span>COPYRIGHT &copy; 2020 CARTIER</span>
+        </footer>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,287 @@
+@import url(reset.css);
+@import url(normalize.css);
+@import url(common.css);
+
+
+div.section{
+    height: 100vh;
+}
+
+
+
+/* BANNER */
+
+.banner .swiper-container{
+    height: 100vh;
+}
+
+.main_slide li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_slide li h2{
+    z-index: 1;
+    opacity: 0;
+    transition: 1.5s;
+    width: 80%;
+}
+.main_slide li h2:first-child {
+    margin: 150px 0 20px;
+    width: 100%;
+}
+
+.main_slide li h2:nth-child(2) {
+    transition-delay: 0.3s;
+    width: 100%;
+}
+
+.main_slide.swiper-wrapper li.swiper-slide-active h2,
+.main_slide.swiper-wrapper li.swiper-slide-duplicate-active h2{
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+.main_slide .mainslide01{
+    background: url(../img/banner_pic.jpg) no-repeat center/cover;
+}
+.main_slide .mainslide02{
+    background: url(../img/cartier_banner_2.jpg) no-repeat center/cover;
+    background-position-x: 53%;
+}
+.main_slide .mainslide03{
+    background: url(../img/cartier_hall.jpg) no-repeat center/cover;
+    /* background-position-x: 60%; */
+}
+
+/* .swiper-slide-active{
+    transition: 1s;
+    background-position-x: 0;
+} */
+
+
+
+/* VIDEO */
+
+.video{
+    height: 100vh;
+}
+.video .fp-tableCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.video .com_text {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+    order: 2;
+}
+.video .video_wrapper {
+    height: 60%;
+    position: relative;
+    /* flex: 1; */
+}
+#myVideo{
+    position: absolute;
+    top:0; right: 0; bottom: 0; left:0;
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    /* z-index: -1; */
+}
+
+
+/* PANTHERE */
+
+.panthere{
+    height: 100vh;
+}
+.pan_banner {
+    height: 50%;
+}
+.panthere .fp-tableCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.panthere .pan_thum {
+    background: url(../img/panthere_thum.jpg) no-repeat center/cover;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.panthere .contents i{
+    margin-left: 20px;
+}
+
+
+
+.panthere .swiper-container {
+    position: inherit;
+    overflow: inherit;
+}
+.panthere_slide{
+    margin-top: 40px;
+}
+
+.panthere .panthere_slide img{
+    width: 55vw;
+    /* height: 100%; */
+}
+
+.panthere .swiper-container{
+    height: 40%;
+}
+
+.panthere .swiper-slide{
+    /* width: 100px; */
+}
+/* .panthere_slide .swiper-slide */
+
+.panthere_slide li:first-child{
+    /* background: url(../img/panthere_br_yg.jpg) no-repeat center/cover; */
+}
+.panthere_slide li:nth-child(2){
+    /* background: url(../img/panthere_er_wg.jpg) no-repeat center/cover; */
+}
+.panthere_slide li:nth-child(3){
+    /* background: url(../img/panthere_r_yg.jpg) no-repeat center/cover; */
+}
+.panthere_slide li:nth-child(4){
+    /* background: url(../img/panthere_br_yg.jpg) no-repeat center/cover; */
+}
+.panthere_slide li:nth-child(5){
+    /* background: url(../img/panthere_er_wg.jpg) no-repeat center/cover; */
+}
+.panthere_slide li:nth-child(6){
+    /* background: url(../img/panthere_r_yg.jpg) no-repeat center/cover; */
+}
+
+/* COLLECTION */
+.collection .fp-tableCell{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.collection .fp-tableCell .contents{
+}
+
+
+.collection .collection_list {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection .collection_list li:first-child {
+    background: url(../img/thum_panthere_wt.jpg) no-repeat center/cover;
+}
+.collection .collection_list li:nth-child(2) {
+    background: url(../img/thum_trinity_r.jpg) no-repeat center/cover;
+}
+.collection .collection_list li:nth-child(3) {
+    background: url(../img/thum_juste_br.jpg) no-repeat center/cover;
+}
+.collection .collection_list li:nth-child(4) {
+    background: url(../img/cartier_panthere_4.jpg) no-repeat center/cover;
+}
+
+.collection .collection_list li {
+    width: 45%;
+    height: 47%;
+}
+.collection .collection_list li:first-child,
+.collection .collection_list li:nth-child(3) {
+    margin-right: 10px;
+}
+
+/* SERVICES */
+
+.services{
+    display: flex;
+    flex-direction: column;
+}
+
+.services .hallbg{
+    height: 75%;
+    background: url(../img/cartier_hall.jpg) no-repeat center/cover;    
+    position: relative;
+}
+.services .hallbg .hallcontents{
+    width: 80%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+
+
+/* MODAL */
+
+
+.modal .content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: block;
+    font-size: 14px;
+    width: 75%;
+    padding: 20px;
+    background: rgb(255 255 255 / 100%);
+    /* line-height: 25px; */
+    /* text-align: center; */
+    /* position: absolute; */
+    color: #000;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0 0 0 6px #580000;
+    z-index: 200;
+}
+  .modal .content p em,
+  .modal .content h2:nth-child(2) a{
+      /* font-size: 1.1rem; */
+      font-weight: 700;
+      color: #580000;
+  }
+  
+  .modal .content p{
+      margin: 7px 0 7px;
+      text-align: left;
+  }
+  
+  .modal .close{
+    position: absolute;
+    top:10px;
+    right:10px;
+  }
+  .modal .close a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    text-indent:-9999em;
+  }
+  .modal .close:before{
+    content:'X';
+    color: #580000;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  
+  
